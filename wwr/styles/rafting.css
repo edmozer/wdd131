@@ -1,4 +1,4 @@
-/* Header Grid Layout */
+/* Header Section */
 .site-header {
   background: var(--primary-color);
   color: #fff;
@@ -33,7 +33,7 @@
   color: var(--accent2-color);
 }
 
-/* Hero Section Grid */
+/* Hero Section */
 .hero-section {
   margin-top: 32px;
   margin-bottom: 32px;
@@ -66,7 +66,7 @@
   margin: 0 auto;
 }
 
-/* History Section Grid */
+/* History Section */
 .history-section {
   margin-bottom: 32px;
 }
@@ -83,7 +83,7 @@
   align-items: center;
 }
 .history-left, .history-right {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--accent1-color);
   text-align: justify;
 }
@@ -91,12 +91,14 @@
   text-align: center;
 }
 .history-img {
-  max-width: 260px;
-  border-radius: 12px;
+  max-width: 180px;
+  border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: block;
+  margin: 0 auto;
 }
 
-/* Adventure Section Flexbox */
+/* Adventure Section */
 .adventure-section {
   margin-bottom: 32px;
 }
@@ -121,21 +123,8 @@
 }
 .adventure-figures img {
   width: 100px;
-  height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-@media (max-width: 900px) {
-  .adventure-figures {
-    gap: 12px;
-  }
-  .adventure-figures figure {
-    width: 100px;
-    flex: 0 0 100px;
-  }
-  .adventure-figures img {
-    width: 80px;
-  }
 }
 .adventure-figures figcaption {
   margin-top: 8px;
@@ -144,7 +133,7 @@
   text-align: center;
 }
 
-/* Footer Flexbox */
+/* Footer Section */
 .site-footer {
   background: var(--primary-color);
   color: #fff;
@@ -202,6 +191,13 @@
   }
   .adventure-figures {
     gap: 12px;
+  }
+  .adventure-figures figure {
+    width: 100px;
+    flex: 0 0 100px;
+  }
+  .adventure-figures img {
+    width: 80px;
   }
 }
 /* CSS Variables */
