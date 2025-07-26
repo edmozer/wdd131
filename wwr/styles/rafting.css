@@ -109,14 +109,8 @@
 .adventure-figures {
   display: flex;
   gap: 24px;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.adventure-figures {
-  display: flex;
-  gap: 16px;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 .adventure-figures figure {
   display: flex;
@@ -133,7 +127,6 @@
 }
 @media (max-width: 900px) {
   .adventure-figures {
-    flex-wrap: wrap;
     gap: 12px;
   }
   .adventure-figures figure {
@@ -432,163 +425,13 @@ main {
   }
 }
 
+
+/* Only one :root block retained below, with consolidated variables */
 :root {
   --primary-color: #0077b6;
   --secondary-color: #00b4d8;
-  --accent1-color: #90e0ef;
-  --accent2-color: #caf0f8;
-  --heading-font: 'Roboto Slab', serif;
-  --body-font: 'Open Sans', sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
-  background-color: var(--accent2-color);
-}
-
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
-}
-
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-}
-
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
-}
-
-.socialmedia a {
-  text-decoration: none;
-}
-
-.hero {
-  position: relative;
-  margin-bottom: 24px;
-}
-
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff;
-}
-
-.hero article {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background: rgba(255,255,255,0.9);
-  padding: 12px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  max-width: 350px;
-}
-
-.hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 12px;
-}
-
-footer {
-  margin-top: 32px;
-  border-top: 2px solid var(--primary-color);
-  text-align: center;
-  background-color: var(--accent1-color);
-  color: #fff;
-  padding: 16px 0;
-}
-:root {
-  --primary-color: #0077b6;
   --accent1-color: #023e8a;
   --accent2-color: #90e0ef;
-  --heading-font: 'Roboto', Arial, sans-serif;
-  --body-font: 'Roboto', Arial, sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
-}
-
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
-}
-
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-}
-
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
-}
-
-.socialmedia a {
-  text-decoration: none;
-}
-
-.hero {
-  position: relative;
-}
-
-.hero-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff;
-}
-
-.hero article {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background: rgba(255,255,255,0.8);
-  padding: 12px;
-  border-radius: 8px;
-}
-
-.hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 12px;
+  --heading-font: 'Roboto Slab', serif;
+  --body-font: 'Open Sans', sans-serif;
 }
