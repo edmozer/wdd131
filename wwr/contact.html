@@ -1,51 +1,38 @@
 <!DOCTYPE html>
-<!-- 
-Checklist:
-✓ HTML válido W3C
-✓ Meta tags completas
-✓ Título e descrição específicos
-✓ Favicon incluído
-✓ CSS único linkado
-✓ Semântica HTML5
-✓ Navegação comum
-✓ Formulário validado
-✓ Mapa responsivo
--->
-<html lang="pt-BR">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato - Whitewater Raft Co.</title>
-  <meta name="description" content="Entre em contato com a Whitewater Raft Co. para reservas, informações ou dúvidas sobre nossas aventuras de rafting. Atendimento personalizado com nossa equipe especializada.">
-  <meta name="author" content="Edmozer Souza Cavalcante">
+  <title>Contact - Whitewater Raft Co.</title>
+  <meta name="description" content="Contact Whitewater Raft Co. for reservations, information, or questions about our rafting adventures. Personalized service from our expert team.">
   <link rel="stylesheet" href="styles/rafting.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-  <a href="#main" class="skip-to-content">Pular para o conteúdo</a>
+  <a href="#main" class="skip-to-content">Skip to content</a>
   
   <header class="site-header">
     <div class="header-grid">
       <div class="header-logo">
         <a href="index.html" class="logo-text">Whitewater Raft Co.</a>
       </div>
-      <nav class="header-nav" aria-label="Navegação principal">
+      <nav class="header-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
-        <a href="about.html">Sobre Nós</a>
-        <a href="trips.html">Pacotes</a>
-        <a href="contact.html" aria-current="page">Contato</a>
+        <a href="about.html">About Us</a>
+        <a href="trips.html">Packages</a>
+        <a href="contact.html" aria-current="page">Contact</a>
       </nav>
     </div>
   </header>
   <main id="main">
-    <h1>Entre em Contato</h1>
+    <h1>Contact Us</h1>
     
     <section class="contact-info">
-      <h2>Informações de Contato</h2>
+      <h2>Contact Information</h2>
       <address>
-        Rua dos Rafting, 123<br>
+        Rafting Street, 123<br>
         Brotas - SP, 17380-000<br>
-        <a href="tel:+551434421234">Telefone: (14) 3442-1234</a><br>
+        <a href="tel:+551434421234">Phone: (14) 3442-1234</a><br>
         <a href="mailto:contato@whitewaterraft.com.br">contato@whitewaterraft.com.br</a>
       </address>
       
@@ -56,60 +43,60 @@ Checklist:
                 allowfullscreen="" 
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade"
-                title="Localização da Whitewater Raft Co."></iframe>
+                title="Location of Whitewater Raft Co."></iframe>
       </div>
     </section>
 
     <section class="contact-form-section">
-      <h2>Formulário de Contato</h2>
+      <h2>Contact Form</h2>
       <form class="contact-form" action="#" method="post">
         <div class="form-group">
-          <label for="nome">Nome:</label>
+          <label for="nome">Name:</label>
           <input type="text" id="nome" name="nome" required 
                  aria-describedby="nome-desc">
-          <span class="form-hint" id="nome-desc">Nome completo</span>
+          <span class="form-hint" id="nome-desc">Full name</span>
         </div>
 
         <div class="form-group">
-          <label for="email">E-mail:</label>
+          <label for="email">Email:</label>
           <input type="email" id="email" name="email" required
                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                  aria-describedby="email-desc">
-          <span class="form-hint" id="email-desc">Ex: seu@email.com</span>
+          <span class="form-hint" id="email-desc">Ex: your@email.com</span>
         </div>
 
         <div class="form-group">
-          <label for="assunto">Tipo de Contato:</label>
+          <label for="assunto">Contact Type:</label>
           <select id="assunto" name="assunto" required>
-            <option value="">Selecione uma opção</option>
-            <option value="reserva">Fazer uma Reserva</option>
-            <option value="info">Informações Gerais</option>
-            <option value="grupo">Pacotes para Grupos</option>
-            <option value="outro">Outro Assunto</option>
+            <option value="">Select an option</option>
+            <option value="reserva">Make a Reservation</option>
+            <option value="info">General Information</option>
+            <option value="grupo">Group Packages</option>
+            <option value="outro">Other Subject</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label for="mensagem">Mensagem:</label>
+          <label for="mensagem">Message:</label>
           <textarea id="mensagem" name="mensagem" rows="5" required
                     aria-describedby="msg-desc"></textarea>
-          <span class="form-hint" id="msg-desc">Descreva sua dúvida ou solicitação</span>
+          <span class="form-hint" id="msg-desc">Describe your question or request</span>
         </div>
 
-        <button type="submit" class="button button-primary">Enviar Mensagem</button>
+        <button type="submit" class="button button-primary">Send Message</button>
       </form>
     </section>
   </main>
   <footer class="site-footer">
     <div class="footer-grid">
       <div class="footer-info">
-        <p>&copy; 2025 Whitewater Raft Co. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Whitewater Raft Co. All rights reserved.</p>
         <ul class="footer-links">
-          <li><a href="#">Política de Privacidade</a></li>
-          <li><a href="#">Termos de Uso</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
         </ul>
       </div>
-      <nav class="social-nav" aria-label="Redes sociais">
+      <nav class="social-nav" aria-label="Social media">
         <ul>
           <li>
             <a href="https://facebook.com/whitewaterraft" target="_blank" rel="noopener">
@@ -134,22 +121,4 @@ Checklist:
     </div>
   </footer>
   
-  <!-- Instruções de validação -->
-  <!--
-  Passo a passo para validação:
-  1. HTML: https://validator.w3.org/#validate_by_input
-  2. CSS: https://jigsaw.w3.org/css-validator/#validate_by_input
-  3. Links: Web Developer Extension > Information > View Link Information
-  4. Contraste: DevTools > More Tools > CSS Overview > Contrast issues
-  5. Performance: DevTools > Lighthouse > Desktop > Generate report
-  
-  Para verificar peso da página:
-  1. DevTools > Network
-  2. Marcar "Disable cache"
-  3. Recarregar página
-  4. Verificar "Transferred" - deve ser menor que 500 KB
-  -->
-</body>
-</html>
-</body>
-</html>
+
