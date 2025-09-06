@@ -1,32 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edmozer Souza Cavalcante | WDD 130</title>
-    <meta name="description" content="Edmozer Souza Cavalcante's WDD 130 home page. BYU Idaho, software development, product manager, Fortaleza, Brazil.">
-    <meta name="author" content="Edmozer Souza Cavalcante">
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>WDD 131 - Dynamic Web Fundamentals - Edmozer Cavalcante</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Edmozer Cavalcante's course page featuring JavaScript fundamentals, web development projects, and dynamic content implementation">
+    <meta name="author" content="Edmozer Cavalcante">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
         <nav>
-            <a href="#">Home</a>
-            <a href="rafting.html">Rafting Website</a>
+            <a href="https://linkedin.com/in/edmozer" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a>
+            <a href="final/index.html">Final Project</a>
         </nav>
     </header>
+
     <main>
-        <h1>Edmozer Souza Cavalcante | WDD 130</h1>
-        <img src="images/profile.webp" alt="Hello, my name is Edmozer Souza Cavalcante">
-        <p>I am Ed Cavalcante, from Fortaleza, Brazil. I am a product manager in the tech industry and I am now learning more about coding to improve my skills. I am pursuing a degree in software development at BYU Idaho.</p>
+        <h1>Edmozer Cavalcante</h1>
+        
+        <div class="cards-grid">
+            <section class="card">
+                <h2>About Me</h2>
+                <img src="images/profile.webp" alt="Edmozer Cavalcante" width="200" height="200">
+                <p>I am a web development student passionate about creating dynamic and accessible web experiences. My journey in web development has equipped me with skills in HTML, CSS, and JavaScript.</p>
+            </section>
+
+            <section class="card">
+                <h2>Web Development Journey</h2>
+                <img src="images/brazil.webp" alt="Computer code on screen" width="300" height="200">
+                <p>Through WDD 131, I am expanding my knowledge  dynamic web development, learning to create interactive user experiences, and mastering JavaScript fundamentals.</p>
+            </section>
+        </div>
     </main>
-    <aside>
-        <h2>Brazil</h2>
-        <img src="images/brazil.webp" alt="Brazilian flag or landmark">
-        <p>Brazil is the largest country in South America, known for its vibrant culture, beautiful landscapes, and diverse wildlife. Fortaleza, my hometown, is famous for its stunning beaches and warm hospitality.</p>
-    </aside>
+
     <footer>
-        <p>&copy; 2025 | Edmozer Souza Cavalcante | Fortaleza, Brazil</p>
+        <p>&copy; <span id="currentyear"></span> Edmozer Cavalcante | Fortaleza, Brazil</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>
