@@ -66,18 +66,8 @@
         <section class="weather" id="weather">
             <h2>Weather in São Paulo</h2>
             <div class="weather-content">
-                <!-- Inline SVG used for the mobile/icon requirement (shown only on mobile by .mobile-only) -->
-                <svg class="weather-icon mobile-only" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" aria-hidden="true">
-                    <g fill="none" stroke="#fff" stroke-width="2">
-                        <path d="M20 36a12 12 0 1 1 24 0" fill="#fff" opacity="0.15"/>
-                        <path d="M32 12v-6"/>
-                        <path d="M32 58v-6"/>
-                        <path d="M10 32H4"/>
-                        <path d="M60 32h-6"/>
-                        <path d="M14 14l-4-4"/>
-                        <path d="M54 50l4 4"/>
-                    </g>
-                </svg>
+                <!-- Use the provided weather image (mobile view) -->
+                <img class="weather-icon mobile-only" src="images/Weather%2024%20Sun%20Icon.png" alt="Sunny weather icon" width="64" height="64">
                 <div class="weather-info">
                     <p>Temperature: <span id="temperature">28</span>°C</p>
                     <p>Wind Speed: <span id="windSpeed">15</span> km/h</p>
@@ -100,7 +90,7 @@
                     <p>The national passion</p>
                 </div>
                 <div class="culture-item">
-                    <img src="images/profile.webp" alt="Brazilian music and dance">
+                    <img src="images/Bossa Nova Image.webp" alt="Brazilian music and dance - Bossa Nova">
                     <h3>Music</h3>
                     <p>Samba and Bossa Nova</p>
                 </div>
