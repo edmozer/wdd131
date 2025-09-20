@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Brazil - A Journey Through South America's Largest Country</title>
+    <meta name="description" content="Experience the vibrant culture, stunning landscapes, and tropical climate of Brazil through an immersive visual journey.">
+    <meta name="author" content="Edmozer Cavalcante">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Discover Brazil</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#overview">Overview</a>
+                <a href="#highlights">Highlights</a>
+                <a href="#weather">Weather</a>
+                <a href="#culture">Culture</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="overview">
+            <picture>
+                <source srcset="images/brazil-hero-big.webp 1600w" media="(min-width: 960px)" type="image/webp">
+                <source srcset="images/brazil-hero-medium.webp 800w" media="(min-width: 400px)" type="image/webp">
+                <img src="images/brazil-hero-small.webp"
+                     srcset="images/brazil-hero-small.webp 480w, images/brazil-hero-medium.webp 800w, images/brazil-hero-big.webp 1600w"
+                     sizes="(max-width:400px) 100vw, (max-width:960px) 100vw, 1200px"
+                     alt="Scenic view of Christ the Redeemer overlooking Rio de Janeiro"
+                     width="1600" height="900" loading="eager" style="width:100%;height:auto;">
+            </picture>
+            <div class="hero-content">
+                <h2>Welcome to Brazil</h2>
+                <p>Experience the world's most diverse ecosystem, vibrant culture, and warm hospitality.</p>
+            </div>
+        </section>
+
+        <section class="highlights" id="highlights">
+            <h2>Country Highlights</h2>
+            <div class="highlights-grid">
+                <article>
+                    <h3>Natural Wonders</h3>
+                    <p>Home to the Amazon Rainforest, Iguazu Falls, and over 7,400 km of coastline.</p>
+                </article>
+                <article>
+                    <h3>Rich Culture</h3>
+                    <p>A melting pot of indigenous, African, and European influences creating unique traditions.</p>
+                </article>
+                <article>
+                    <h3>Diverse Cuisine</h3>
+                    <p>Famous for feijoada, churrasco, and tropical fruits from the Amazon.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="weather" id="weather">
+            <h2>Weather in São Paulo</h2>
+            <div class="weather-content">
+                <!-- Inline SVG used for the mobile/icon requirement (shown only on mobile by .mobile-only) -->
+                <svg class="weather-icon mobile-only" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" aria-hidden="true">
+                    <g fill="none" stroke="#fff" stroke-width="2">
+                        <path d="M20 36a12 12 0 1 1 24 0" fill="#fff" opacity="0.15"/>
+                        <path d="M32 12v-6"/>
+                        <path d="M32 58v-6"/>
+                        <path d="M10 32H4"/>
+                        <path d="M60 32h-6"/>
+                        <path d="M14 14l-4-4"/>
+                        <path d="M54 50l4 4"/>
+                    </g>
+                </svg>
+                <div class="weather-info">
+                    <p>Temperature: <span id="temperature">28</span>°C</p>
+                    <p>Wind Speed: <span id="windSpeed">15</span> km/h</p>
+                    <p>Wind Chill: <span id="windChill">Calculating...</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="culture" id="culture">
+            <h2>Cultural Experience</h2>
+            <div class="culture-grid">
+                <div class="culture-item">
+                    <img src="images/brazil.webp" alt="Brazilian Carnival celebration">
+                    <h3>Carnival</h3>
+                    <p>The world's biggest festival</p>
+                </div>
+                <div class="culture-item">
+                    <img src="images/brazil-hero-small.webp" alt="Brazilian soccer culture">
+                    <h3>Soccer</h3>
+                    <p>The national passion</p>
+                </div>
+                <div class="culture-item">
+                    <img src="images/profile.webp" alt="Brazilian music and dance">
+                    <h3>Music</h3>
+                    <p>Samba and Bossa Nova</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Edmozer Cavalcante | São Paulo, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
