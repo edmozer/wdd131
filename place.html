@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover Brazil - A Journey Through South America's Largest Country</title>
-    <meta name="description" content="Experience the vibrant culture, stunning landscapes, and tropical climate of Brazil through an immersive visual journey.">
-    <meta name="author" content="Edmozer Cavalcante">
+    <title>WDD 131 - Country Page - Brazil</title>
+    <meta name="description" content="WDD 131 Week 3 Country Page Assignment - Exploring Brazil's weather, culture, and attractions">
+    <meta name="author" content="Student: Edmozer Cavalcante">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
 <body>
     <header>
         <div class="header-content">
-            <h1>Discover Brazil</h1>
+            <h1>WDD 131 - Country Page - Brazil</h1>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="#overview">Overview</a>
@@ -37,7 +37,7 @@
                      srcset="images/brazil-hero-small.webp 480w, images/brazil-hero-medium.webp 800w, images/brazil-hero-big.webp 1600w"
                      sizes="(max-width:400px) 100vw, (max-width:960px) 100vw, 1200px"
                      alt="Scenic view of Christ the Redeemer overlooking Rio de Janeiro"
-                     width="1600" height="900" loading="eager" style="width:100%;height:auto;">
+                     width="1600" height="900" loading="eager">
             </picture>
             <div class="hero-content">
                 <h2>Welcome to Brazil</h2>
@@ -67,7 +67,10 @@
             <h2>Weather in São Paulo</h2>
             <div class="weather-content">
                 <!-- Use the provided weather image (mobile view) -->
-                <img class="weather-icon mobile-only" src="images/Weather%2024%20Sun%20Icon.png" alt="Sunny weather icon" width="64" height="64">
+                <svg class="weather-icon mobile-only" width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="4" fill="currentColor"/>
+                    <path d="M12 5V3M12 21v-2M5 12H3m18 0h-2M7.05 7.05L5.636 5.636m12.728 12.728L16.95 16.95M7.05 16.95l-1.414 1.414M18.364 5.636L16.95 7.05" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
                 <div class="weather-info">
                     <p>Temperature: <span id="temperature">28</span>°C</p>
                     <p>Wind Speed: <span id="windSpeed">15</span> km/h</p>
