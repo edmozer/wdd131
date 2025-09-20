@@ -31,11 +31,17 @@
     <main>
         <section class="hero" id="overview">
             <picture>
-                <source srcset="images/brazil-hero-big.webp 1600w" media="(min-width: 960px)" type="image/webp">
-                <source srcset="images/brazil-hero-medium.webp 800w" media="(min-width: 400px)" type="image/webp">
+                <source srcset="images/brazil-hero-big.webp 1600w" 
+                        sizes="(min-width: 960px) 1200px"
+                        media="(min-width: 960px)" 
+                        type="image/webp">
+                <source srcset="images/brazil-hero-medium.webp 800w"
+                        sizes="(min-width: 400px) 100vw"
+                        media="(min-width: 400px)" 
+                        type="image/webp">
                 <img src="images/brazil-hero-small.webp"
-                     srcset="images/brazil-hero-small.webp 480w, images/brazil-hero-medium.webp 800w, images/brazil-hero-big.webp 1600w"
-                     sizes="(max-width:400px) 100vw, (max-width:960px) 100vw, 1200px"
+                     srcset="images/brazil-hero-small.webp 480w"
+                     sizes="100vw"
                      alt="Scenic view of Christ the Redeemer overlooking Rio de Janeiro"
                      width="1600" height="900" loading="eager">
             </picture>
@@ -93,7 +99,7 @@
                     <p>The national passion</p>
                 </div>
                 <div class="culture-item">
-                    <img src="images/Bossa Nova Image.webp" alt="Brazilian music and dance - Bossa Nova">
+                    <img src="images/bossa-nova.webp" alt="Brazilian music and dance - Bossa Nova">
                     <h3>Music</h3>
                     <p>Samba and Bossa Nova</p>
                 </div>
