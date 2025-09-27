@@ -8,26 +8,32 @@ const temperature = 28; // °C
 const windSpeed = 15;  // km/h
 
 // Calculate wind chill
-function calculateWindChill(temp, speed) {
-    // Convert Celsius to Fahrenheit for the formula
-    const tempF = (temp * 9/5) + 32;
-    const speedMph = speed / 1.609344;
+function calculateWindChill(tempC, speedKmh) {
+    // Convert Celsius to Fahrenheit
+    const tempF = (tempC * 9/5) + 32;
+    // Convert km/h to mph
+    const speedMph = speedKmh / 1.609344;
 
-    // Check if conditions meet the requirements for wind chill calculation
-    if (temp <= 10 && speed > 4.8) {
-        // Wind chill formula
-        const windChill = 13.12 + 0.6215 * tempF - 11.37 * Math.pow(speedMph, 0.16) + 0.3965 * tempF * Math.pow(speedMph, 0.16);
+    // Check if temperature and wind speed meet the requirements
+    if (tempF <= 50 && speedMph > 3) {
+        // Official Wind Chill Formula
+        const windChillF = 35.74 + (0.6215 * tempF) - (35.75 * Math.pow(speedMph, 0.16)) + (0.4275 * tempF * Math.pow(speedMph, 0.16));
         // Convert back to Celsius
-        return ((windChill - 32) * 5/9).toFixed(1);
+        const windChillC = (windChillF - 32) * 5/9;
+        return windChillC.toFixed(1) + '°C';
     }
-    return 'N/A';
+    return 'N/A - Temperature too high or wind too low';
 }
 
-// Update weather information
+// Update weather display
 function updateWeather() {
+    // Display temperature
     temperatureElement.textContent = temperature;
     windSpeedElement.textContent = windSpeed;
-    windChillElement.textContent = calculateWindChill(temperature, windSpeed);
+    
+    // Calculate and display wind chill
+    const windChill = calculateWindChill(temperature, windSpeed);
+    windChillElement.textContent = windChill;
 }
 
 // Update copyright year and last modified date
