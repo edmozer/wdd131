@@ -1,19 +1,15 @@
-// Hamburger menu functionality
-document.getElementById('hamburgerBtn').addEventListener('click', function() {
-    const nav = document.querySelector('nav');
-    const hamburger = document.getElementById('hamburgerBtn');
-    
-    if (nav.classList.contains('show')) {
-        nav.classList.remove('show');
-        hamburger.innerHTML = '☰';
-    } else {
-        nav.classList.add('show');
-        hamburger.innerHTML = '✕';
-    }
+// Update current year in footer
+function updateCopyright() {
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+}
+
+// Update last modified date
+function updateLastModified() {
+    document.getElementById('lastModified').textContent = `Last modified: ${document.lastModified}`;
+}
+
+// Initialize page elements
+document.addEventListener('DOMContentLoaded', () => {
+    updateCopyright();
+    updateLastModified();
 });
-
-// Get current year for copyright
-document.getElementById('currentyear').textContent = new Date().getFullYear();
-
-// Get last modified date
-document.getElementById('lastModified').textContent = `Last modified: ${document.lastModified}`;

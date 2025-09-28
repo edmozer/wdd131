@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - LDS Temples in Utah</title>
-    <meta name="description" content="A collection of LDS temples located in Utah, filtered by location">
+    <title>WDD 131 - Utah Temple Photo Album</title>
+    <meta name="description" content="A curated collection of LDS temples in Utah, organized by region with beautiful photographs">
     <meta name="author" content="Student: Edmozer Cavalcante">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/temples.css">
 </head>
 <body>
@@ -16,6 +20,7 @@
             <a href="#salt-lake">Salt Lake</a>
             <a href="#utah-county">Utah County</a>
             <a href="#southern">Southern Utah</a>
+            <a href="#about">About Album</a>
         </nav>
     </header>
 
@@ -67,15 +72,17 @@
                 </article>
             </div>
         </section>
+
+        <section id="about" class="temple-section">
+            <h2>About This Album</h2>
+            <p>This photo album showcases the beautiful temples of The Church of Jesus Christ of Latter-day Saints located throughout Utah. The temples are organized by region to help visitors explore these sacred buildings in their geographical context.</p>
+        </section>
     </main>
 
     <footer>
         <p>&copy; <span id="currentyear"></span> Edmozer Cavalcante | Utah, USA</p>
         <p id="lastModified"></p>
     </footer>
-    <script>
-        document.getElementById('currentyear').textContent = new Date().getFullYear();
-        document.getElementById('lastModified').textContent = `Last modified: ${document.lastModified}`;
-    </script>
+    <script src="scripts/temples.js" defer></script>
 </body>
 </html>

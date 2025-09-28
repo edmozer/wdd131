@@ -6,8 +6,8 @@
     --text-light: #ffffff;
     --background-light: #f5f5f5;
     
-    --heading-font: Georgia, serif;
-    --body-font: Arial, sans-serif;
+    --heading-font: 'Merriweather', serif;
+    --body-font: 'Open Sans', sans-serif;
     
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
