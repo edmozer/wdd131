@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - LDS Temples in Utah</title>
+    <meta name="description" content="A collection of LDS temples located in Utah, filtered by location">
+    <meta name="author" content="Student: Edmozer Cavalcante">
+    <link rel="stylesheet" href="styles/temples.css">
+</head>
+<body>
+    <header>
+        <h1>LDS Temples in Utah</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#salt-lake">Salt Lake</a>
+            <a href="#utah-county">Utah County</a>
+            <a href="#southern">Southern Utah</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="salt-lake" class="temple-section">
+            <h2>Salt Lake Area Temples</h2>
+            <div class="temple-grid">
+                <article class="temple-card">
+                    <img src="images/Salt Lake Temple.webp" alt="Salt Lake Temple" width="500" height="300">
+                    <h3>Salt Lake Temple</h3>
+                    <p>The iconic Salt Lake Temple stands at the heart of Temple Square.</p>
+                </article>
+                <article class="temple-card">
+                    <img src="images/Jordan River Temple Exterior Images.webp" alt="Jordan River Utah Temple" width="500" height="300">
+                    <h3>Jordan River Temple</h3>
+                    <p>Located in South Jordan, serving the southwest Salt Lake Valley.</p>
+                </article>
+                <article class="temple-card">
+                    <img src="images/Draper Utah Temple.webp" alt="Draper Utah Temple" width="500" height="300">
+                    <h3>Draper Temple</h3>
+                    <p>Serving the southeast portion of the Salt Lake Valley.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="utah-county" class="temple-section">
+            <h2>Utah County Temples</h2>
+            <div class="temple-grid">
+                <article class="temple-card">
+                    <img src="images/Oquirrh Mountain Temple.webp" alt="Oquirrh Mountain Utah Temple" width="500" height="300">
+                    <h3>Oquirrh Mountain Temple</h3>
+                    <p>Located in South Jordan, with beautiful mountain views.</p>
+                </article>
+                <article class="temple-card">
+                    <img src="images/mantitemple.jpeg" alt="Manti Utah Temple" width="500" height="300">
+                    <h3>Manti Temple</h3>
+                    <p>Historic temple serving central Utah.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="southern" class="temple-section">
+            <h2>Southern Utah Temples</h2>
+            <div class="temple-grid">
+                <article class="temple-card">
+                    <img src="images/stgeorgetemple.jpeg" alt="St. George Utah Temple" width="500" height="300">
+                    <h3>St. George Temple</h3>
+                    <p>The first temple completed in Utah.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Edmozer Cavalcante | Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        // Update copyright year and last modified date
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = `Last modified: ${document.lastModified}`;
+    </script>
+</body>
+</html>
