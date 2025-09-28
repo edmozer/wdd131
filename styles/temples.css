@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #2d5d7b;
+    --secondary-color: #935d5d;
+    --accent-color: #e6d5ac;
+    --text-dark: #333333;
+    --text-light: #ffffff;
+    --background-light: #f5f5f5;
+    
+    --heading-font: Georgia, serif;
+    --body-font: Arial, sans-serif;
+    
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    
+    --max-width: 1200px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: var(--body-font);
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--background-light)
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: var(--spacing-md);
+    text-align: center
+}
+
+h1 {
+    font-family: var(--heading-font);
+    margin-bottom: var(--spacing-sm)
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-sm)
+}
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1)
+}
+
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--spacing-md)
+}
+
+.temple-section {
+    margin-bottom: var(--spacing-lg)
+}
+
+.temple-section h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+    text-align: center
+}
+
+.temple-grid {
+    display: grid;
+    gap: var(--spacing-md);
+    grid-template-columns: 1fr
+}
+
+.temple-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+}
+
+.temple-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover
+}
+
+.temple-card h3 {
+    font-family: var(--heading-font);
+    padding: var(--spacing-sm);
+    color: var(--secondary-color)
+}
+
+.temple-card p {
+    padding: 0 var(--spacing-sm) var(--spacing-sm)
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: var(--spacing-md);
+    margin-top: var(--spacing-lg)
+}
+
+footer p {
+    margin: 0.5rem 0
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        gap: var(--spacing-md)
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}

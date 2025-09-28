@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album - WDD 131</title>
+    <meta name="description" content="A responsive temple picture album showcasing various LDS temples">
+    <meta name="author" content="Edmozer Cavalcante">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- CSS Files (mobile-first order) -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h2>Temple Album</h2>
+            <button id="hamburgerBtn" class="hamburger">☰</button>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>LDS Temples Around the World</h1>
+        
+        <div class="temple-grid">
+            <figure>
+                <img src="images/Salt Lake Temple.webp" alt="Salt Lake Temple">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/logantemple.jpeg" alt="Logan Temple">
+                <figcaption>Logan Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/mantitemple.jpeg" alt="Manti Temple">
+                <figcaption>Manti Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/stgeorgetemple.jpeg" alt="St. George Temple">
+                <figcaption>St. George Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/bountifultemple.jpeg" alt="Bountiful Temple">
+                <figcaption>Bountiful Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Jordan River Temple Exterior Images.webp" alt="Jordan River Temple">
+                <figcaption>Jordan River Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Draper Utah Temple.webp" alt="Draper Temple">
+                <figcaption>Draper Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Oquirrh Mountain Temple.webp" alt="Oquirrh Mountain Temple">
+                <figcaption>Oquirrh Mountain Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Edmozer Cavalcante | São Paulo, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
