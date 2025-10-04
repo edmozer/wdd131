@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Product Review Form</title>
+    <meta name="description" content="Product review form allowing customers to rate and review their purchased products">
+    <meta name="author" content="Edmozer Cavalcante">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+        <p>Share your experience with our products</p>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <div class="form-group">
+                <label for="product">Product Name</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product...</option>
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Overall Rating</label>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5" title="5 stars">★</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4" title="4 stars">★</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3" title="3 stars">★</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2" title="2 stars">★</label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1" title="1 star">★</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="installDate">Date of Installation</label>
+                <input type="date" id="installDate" name="installDate" required>
+            </div>
+
+            <fieldset class="form-group">
+                <legend>Useful Features</legend>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="feature1" name="features" value="easyInstall">
+                        <label for="feature1">Easy Installation</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="feature2" name="features" value="reliable">
+                        <label for="feature2">Reliability</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="feature3" name="features" value="performance">
+                        <label for="feature3">Performance</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="feature4" name="features" value="support">
+                        <label for="feature4">Customer Support</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="review">Written Review</label>
+                <textarea id="review" name="review" rows="4" placeholder="Share your experience with the product..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Your Name</label>
+                <input type="text" id="username" name="username" placeholder="Optional">
+            </div>
+
+            <div class="form-group submit-group">
+                <input type="submit" value="Submit Review" class="submit-button">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>©️2025 Product Reviews | WDD 131 - Web Fundamentals</p>
+        <p>All rights reserved</p>
+    </footer>
+    <script src="scripts/form.js" defer></script>
+</body>
+</html>
