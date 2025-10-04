@@ -15,19 +15,23 @@ function populateProducts() {
     const productSelect = document.getElementById('product');
     products.forEach(product => {
         const option = document.createElement('option');
-        option.value = product.id;
+        // use product name as the value per assignment requirements
+        option.value = product.name;
         option.textContent = `${product.name} - $${product.price}`;
         productSelect.appendChild(option);
     });
 }
 
 // Handle form submission
-document.getElementById('reviewForm').addEventListener('submit', function(e) {
-    // Form will submit naturally since we're using GET method
-    // Just update the review count in localStorage
-    const currentCount = parseInt(localStorage.getItem('reviewCount') || '0');
-    localStorage.setItem('reviewCount', currentCount + 1);
-});
+const reviewForm = document.getElementById('reviewForm');
+if (reviewForm) {
+    reviewForm.addEventListener('submit', function(e) {
+        // increment the review counter when the form is submitted
+        const currentCount = parseInt(localStorage.getItem('reviewCount') || '0');
+        localStorage.setItem('reviewCount', currentCount + 1);
+        // allow the GET submission to proceed
+    });
+}
 
 // Initialize the page
 window.addEventListener('load', function() {
