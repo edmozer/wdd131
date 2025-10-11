@@ -7,13 +7,27 @@
     <meta name="description" content="Discover authentic Brazilian football jerseys, equipment, and memorabilia. Shop official team merchandise and share your product reviews.">
     <meta name="author" content="Edmozer Cavalcante">
     
-    <!-- Google Fonts -->
+    <!-- Performance optimizations -->
+    <link rel="preload" as="image" href="images/logo.webp" fetchpriority="high">
+    
+    <!-- Google Fonts - optimized loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap">
+    </noscript>
     
     <!-- CSS -->
-    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        /* Critical CSS */
+        :root{--primary:#00994c;--surface:#fff;--text:#212529;--background:#f8f9fa;--border:#dee2e6;--font-heading:'Poppins',system-ui,sans-serif;--font-body:'Inter',system-ui,sans-serif;--spacing-md:1rem;--spacing-lg:1.5rem;--shadow-sm:0 1px 3px rgba(0,0,0,.12)}body{font-family:var(--font-body);line-height:1.5;color:var(--text);background:var(--background);margin:0}.site-header{background:var(--surface);box-shadow:var(--shadow-sm);position:sticky;top:0;z-index:100}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 var(--spacing-md)}.header-content{display:flex;align-items:center;justify-content:space-between;padding:var(--spacing-md) 0}
+    </style>
+    <link rel="stylesheet" href="styles/main.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="styles/main.min.css">
+    </noscript>
 </head>
 <body>
     <header class="site-header">

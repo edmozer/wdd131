@@ -1,11 +1,10 @@
-// Products data (expanded from form.js)
 const products = [
     { 
         id: 1, 
         name: "Nike Brasil 2024 Home Jersey",
         price: 89.99,
         category: "jerseys",
-    image: "../images/brazil_home.webp",
+        image: "images/products/brazil_home",
         description: "Official 2024 Brazilian national team home jersey featuring the iconic yellow and green colors.",
         features: ["Authentic Nike Dri-FIT technology", "100% recycled polyester", "Official CBF crest"]
     },
@@ -14,7 +13,7 @@ const products = [
         name: "Adidas Predator Edge.1 Cleats",
         price: 199.99,
         category: "footwear",
-    image: "../images/predator_edge.webp",
+        image: "images/products/predator_edge",
         description: "Professional grade football boots worn by top Brazilian players.",
         features: ["Enhanced ball control", "Lightweight design", "Superior traction"]
     },
@@ -23,7 +22,12 @@ const products = [
         name: "Official CBF Match Ball",
         price: 129.99,
         category: "equipment",
-    image: "../images/cbf_ball.webp",
+        image: "images/products/cbf_ball",
+        sizes: {
+            sm: { width: 320, height: 316 },
+            md: { width: 640, height: 632 },
+            lg: { width: 1200, height: 1184 }
+        },
         description: "The official match ball of the Brazilian Football Confederation.",
         features: ["FIFA Quality Pro certified", "Aerodynamic design", "Premium materials"]
     },
@@ -32,7 +36,7 @@ const products = [
         name: "Flamengo 2024 Away Kit",
         price: 79.99,
         category: "jerseys",
-    image: "../images/fortaleza_jersey.webp",
+        image: "images/products/fortaleza_jersey",
         description: "Official Flamengo away kit for the 2024 season.",
         features: ["Authentic team design", "Breathable fabric", "Club crest"]
     }
@@ -72,11 +76,24 @@ function filterProducts(category = 'all', searchTerm = '') {
 // Create product card HTML using template literals
 function createProductCard(product) {
     const isFavorite = favorites.includes(product.id);
+    const isFirstProduct = product.id === 1;
+    const { sm, md, lg } = product.sizes;
     return `
         <article class="card product-card">
             <picture>
-                <source srcset="${product.image.replace('.webp', '_lg.webp')} 1200w, ${product.image.replace('.webp', '_md.webp')} 800w, ${product.image.replace('.webp', '_sm.webp')} 480w" type="image/webp">
-                <img src="${product.image.replace('.webp', '_md.webp')}" alt="${product.name}" loading="lazy" width="600" height="400">
+                <source 
+                    srcset="${product.image}_lg.webp ${lg.width}w, 
+                            ${product.image}_md.webp ${md.width}w, 
+                            ${product.image}_sm.webp ${sm.width}w"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 800px) 50vw, 100vw"
+                    type="image/webp">
+                <img src="${product.image}_md.webp" 
+                    alt="${product.name}" 
+                    width="${md.width}" 
+                    height="${md.height}"
+                    ${isFirstProduct ? 'fetchpriority="high"' : 'loading="lazy"'}
+                    decoding="${isFirstProduct ? 'sync' : 'async'}"
+                >
             </picture>
             <div class="card-content">
                 <h3>${product.name}</h3>
