@@ -5,7 +5,7 @@ const products = [
         name: "Nike Brasil 2024 Home Jersey",
         price: 89.99,
         category: "jerseys",
-    image: "images/products/brasil-home-2024.svg",
+    image: "../images/brazil_home.webp",
         description: "Official 2024 Brazilian national team home jersey featuring the iconic yellow and green colors.",
         features: ["Authentic Nike Dri-FIT technology", "100% recycled polyester", "Official CBF crest"]
     },
@@ -14,7 +14,7 @@ const products = [
         name: "Adidas Predator Edge.1 Cleats",
         price: 199.99,
         category: "footwear",
-    image: "images/products/predator-edge.svg",
+    image: "../images/predator_edge.webp",
         description: "Professional grade football boots worn by top Brazilian players.",
         features: ["Enhanced ball control", "Lightweight design", "Superior traction"]
     },
@@ -23,7 +23,7 @@ const products = [
         name: "Official CBF Match Ball",
         price: 129.99,
         category: "equipment",
-    image: "images/products/cbf-ball.svg",
+    image: "../images/cbf_ball.webp",
         description: "The official match ball of the Brazilian Football Confederation.",
         features: ["FIFA Quality Pro certified", "Aerodynamic design", "Premium materials"]
     },
@@ -32,7 +32,7 @@ const products = [
         name: "Flamengo 2024 Away Kit",
         price: 79.99,
         category: "jerseys",
-    image: "images/products/flamengo-away-2024.svg",
+    image: "../images/fortaleza_jersey.webp",
         description: "Official Flamengo away kit for the 2024 season.",
         features: ["Authentic team design", "Breathable fabric", "Club crest"]
     }
