@@ -74,7 +74,10 @@ function createProductCard(product) {
     const isFavorite = favorites.includes(product.id);
     return `
         <article class="card product-card">
-            <img src="${product.image}" alt="${product.name}" loading="lazy">
+            <picture>
+                <source srcset="${product.image.replace('.webp', '_lg.webp')} 1200w, ${product.image.replace('.webp', '_md.webp')} 800w, ${product.image.replace('.webp', '_sm.webp')} 480w" type="image/webp">
+                <img src="${product.image.replace('.webp', '_md.webp')}" alt="${product.name}" loading="lazy" width="600" height="400">
+            </picture>
             <div class="card-content">
                 <h3>${product.name}</h3>
                 <p>${product.description}</p>
