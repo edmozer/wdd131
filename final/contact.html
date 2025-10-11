@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Brazilian Football Fan Shop</title>
+    <meta name="description" content="Contact Brazilian Football Fan Shop for questions about our products, shipping, or general inquiries.">
+    <meta name="author" content="Edmozer Cavalcante">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="site-logo">
+                    <img src="images/logo.webp" alt="Brazilian Football Fan Shop Logo" width="40" height="40">
+                    <span>Football Fan Shop</span>
+                </a>
+                
+                <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav">
+                    <span class="sr-only">Menu</span>
+                    ☰
+                </button>
+                
+                <nav class="primary-nav" id="primaryNav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="form.html">Reviews</a>
+                    <a href="contact.html" class="active">Contact</a>
+                    <span class="favorite-counter">
+                        Favorites: <span id="favoriteCount">0</span>
+                    </span>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Contact Us</h1>
+                    <p>Get in touch with our team for support or inquiries</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions about our products or need assistance? We're here to help!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <h3>📍 Visit Us</h3>
+                            <p>Avenida Paulista, 1000<br>São Paulo, SP<br>Brazil</p>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <h3>📧 Email Us</h3>
+                            <p>info@footballfanshop.br<br>support@footballfanshop.br</p>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <h3>📞 Call Us</h3>
+                            <p>Phone: +55 11 1234-5678<br>WhatsApp: +55 11 98765-4321</p>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <h3>⏰ Business Hours</h3>
+                            <p>Monday-Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" method="get" action="thankyou.html">
+                    <h2>Send Us a Message</h2>
+                    
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select a subject...</option>
+                            <option value="product">Product Inquiry</option>
+                            <option value="shipping">Shipping Question</option>
+                            <option value="returns">Returns & Exchanges</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <input type="submit" class="button" value="Send Message">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Your trusted source for authentic Brazilian football merchandise and gear.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="form.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="references.html">References</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li>São Paulo, Brazil</li>
+                        <li>Email: info@footballfanshop.br</li>
+                        <li>Phone: +55 11 1234-5678</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Brazilian Football Fan Shop | WDD 131 Final Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js" defer></script>
+</body>
+</html>

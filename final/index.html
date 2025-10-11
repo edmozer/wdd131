@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazilian Football Fan Shop - Your Source for Authentic Football Gear</title>
+    <meta name="description" content="Discover authentic Brazilian football jerseys, equipment, and memorabilia. Shop official team merchandise and share your product reviews.">
+    <meta name="author" content="Edmozer Cavalcante">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="site-logo">
+                    <img src="images/logo.webp" alt="Brazilian Football Fan Shop Logo" width="40" height="40">
+                    <span>Football Fan Shop</span>
+                </a>
+                
+                <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav">
+                    <span class="sr-only">Menu</span>
+                    ☰
+                </button>
+                
+                <nav class="primary-nav" id="primaryNav">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="form.html">Reviews</a>
+                    <a href="contact.html">Contact</a>
+                    <span class="favorite-counter">
+                        Favorites: <span id="favoriteCount">0</span>
+                    </span>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Authentic Brazilian Football Gear</h1>
+                    <p>Shop official jerseys, equipment, and memorabilia from your favorite Brazilian teams and players.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="filters mb-3">
+                <select id="categoryFilter" aria-label="Filter products by category">
+                    <option value="all">All Categories</option>
+                    <option value="jerseys">Jerseys</option>
+                    <option value="footwear">Footwear</option>
+                    <option value="equipment">Equipment</option>
+                </select>
+                
+                <input type="search" 
+                       id="searchInput" 
+                       placeholder="Search products..."
+                       aria-label="Search products">
+            </div>
+
+            <div id="productGrid" class="cards-grid">
+                <!-- Products will be dynamically populated here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Your trusted source for authentic Brazilian football merchandise and gear.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="form.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="references.html">References</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li>São Paulo, Brazil</li>
+                        <li>Email: info@footballfanshop.br</li>
+                        <li>Phone: +55 11 1234-5678</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Brazilian Football Fan Shop | WDD 131 Final Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js" defer></script>
+</body>
+</html>
