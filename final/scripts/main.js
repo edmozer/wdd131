@@ -5,6 +5,11 @@ const products = [
         price: 89.99,
         category: "jerseys",
         image: "images/products/brazil_home",
+        sizes: {
+            sm: { width: 320, height: 363 },
+            md: { width: 640, height: 726 },
+            lg: { width: 1200, height: 1361 }
+        },
         description: "Official 2024 Brazilian national team home jersey featuring the iconic yellow and green colors.",
         features: ["Authentic Nike Dri-FIT technology", "100% recycled polyester", "Official CBF crest"]
     },
@@ -14,6 +19,11 @@ const products = [
         price: 199.99,
         category: "footwear",
         image: "images/products/predator_edge",
+        sizes: {
+            sm: { width: 320, height: 220 },
+            md: { width: 640, height: 440 },
+            lg: { width: 1200, height: 825 }
+        },
         description: "Professional grade football boots worn by top Brazilian players.",
         features: ["Enhanced ball control", "Lightweight design", "Superior traction"]
     },
@@ -33,12 +43,17 @@ const products = [
     },
     { 
         id: 4, 
-        name: "Flamengo 2024 Away Kit",
+        name: "Fortaleza EC 2025 Home Jersey",
         price: 79.99,
         category: "jerseys",
         image: "images/products/fortaleza_jersey",
-        description: "Official Flamengo away kit for the 2024 season.",
-        features: ["Authentic team design", "Breathable fabric", "Club crest"]
+        sizes: {
+            sm: { width: 320, height: 305 },
+            md: { width: 640, height: 610 },
+            lg: { width: 1200, height: 1143 }
+        },
+        description: "Official Fortaleza Esporte Clube home jersey for the 2025 season.",
+        features: ["Official club design", "Breathable fabric", "Club crest"]
     }
 ];
 
